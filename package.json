@@ -12,6 +12,7 @@
     "serverless-google-cloudfunctions": "^4.6.0"
   },
   "dependencies": {
+    "@google-cloud/bigquery": "^6.2.0",
     "@google-cloud/pubsub": "^3.6.0"
   }
 }
