@@ -5,7 +5,7 @@ tmp
 .coveralls.yml
 
 # Google
-keyfile.json
+autenticacao.json
 
 # Logs
 *.log
@@ -38,4 +38,8 @@ node_modules
 
 
 # Auth
-autenticacao.json
+
+
+# Configs pessoais
+.vs
+.vscode
