@@ -45,3 +45,4 @@ node_modules
 .vs
 .vscode
 autenticacao.json
+deploy.yml

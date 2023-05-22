@@ -4,33 +4,33 @@ module.exports = async function recebeAtividade(requisicao, resposta) {
     const atividade = requisicao.body
 
     if (atividade.hasOwnProperty('data_criacao_atividade') === false) {
-        resposta.send('O campo data_criacao_atividade não foi enviado')
+        resposta.send('O campo data_criacao_atividade nï¿½o foi enviado')
         return
     }
 
     const tiposDeAtividade = ['criar-pergunta', 'responder-pergunta']
-    if (tiposDeAtividade.indexOf(atividade.tipo_de_atividade === -1)) {
-        resposta.send('O campo tipo_de_atividade esta invalido ou não foi informado')
+    if (tiposDeAtividade.indexOf(atividade.tipo_de_atividade) === -1){
+        resposta.send('O campo tipo_de_atividade esta invalido ou nï¿½o foi informado')
         return
     }
 
     if (atividade.hasOwnProperty('nome_do_curso') === false) {
-        resposta.send('O campo nome_do_curso não foi enviado')
+        resposta.send('O campo nome_do_curso nï¿½o foi enviado')
         return
     }
 
     if (atividade.hasOwnProperty('nome_da_aula') === false) {
-        resposta.send('O campo nome_da_aula não foi enviado')
+        resposta.send('O campo nome_da_aula nï¿½o foi enviado')
         return
     }
 
     if (atividade.hasOwnProperty('texto') === false) {
-        resposta.send('O campo texto não foi enviado')
+        resposta.send('O campo texto nï¿½o foi enviado')
         return
     }
 
     if (atividade.text.length > 255) {
-        resposta.send('O campo de texto é maior que 255 caracteres, por favor reduza a quantidade de caracteres')
+        resposta.send('O campo de texto ï¿½ maior que 255 caracteres, por favor reduza a quantidade de caracteres')
         return
     }
 
